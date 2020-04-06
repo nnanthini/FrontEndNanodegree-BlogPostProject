@@ -1,0 +1,49 @@
+/* Main stylesheet for blog_post.html.
+Other stylesheets for different sections of the blog article page are imported into this stylesheet. */
+@import "blog_post_header_footer.css";
+@import "blog_post_author_and_info.css";
+
+body {
+    background-image: url(../../images/Colosseum.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hd hd hd"
+    "auth info info"
+    "ft ft ft";
+    grid-gap: 7px;
+}
+
+/* Responsive media query for small screen devices. */
+@media screen and (max-width: 600px) {
+    body {        
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "hd"
+        "auth"
+        "info"
+        "ft";        
+    }
+}
+
+/* Media query for medium screen devices. */
+@media screen and (min-width: 601px) and (max-width: 920px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "hd hd"
+        "auth info"
+        "ft ft";
+        grid-gap: 7px;
+    }
+}
+

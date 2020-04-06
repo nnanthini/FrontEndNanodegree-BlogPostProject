@@ -1,0 +1,32 @@
+/* Stylesheet for the images section of blog_main.html.
+This stylesheet is imported into blog_main.css*/
+
+.images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;    
+    padding: 5px;
+    background-color: #c03c38;  
+    opacity: 0.9; 
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figcaption {
+    color: black;
+}
+
+img {
+    border: 1px solid #c03c38;
+    padding: 4px;    
+    width: 100px;
+    height: 100px;    
+}

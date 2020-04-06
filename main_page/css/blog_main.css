@@ -1,0 +1,15 @@
+/* Main stylesheet for blog_main.html.
+Other stylesheets for different sections of the main page of the Blog Post project are imported into this stylesheet. */
+
+@import "blog_main_header_footer.css";
+@import "blog_main_images.css";
+@import "blog_main_blog_cards.css";
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,146 @@
+/* Stylesheet for the blog card section of blog_main.html.
+This stylesheet is imported into blog_main.css*/
+
+.article-links {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "c1 c2 c3"
+    "c4 c5 c6";
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.card-1 {
+    grid-area: c1;
+}
+
+.card-2 {
+    grid-area: c2;
+}
+
+.card-3 {
+    grid-area: c3;
+}
+
+.card-4 {
+    grid-area: c4;
+}
+
+h3, .card-text {
+    text-align: center;
+}
+
+h3 {
+    color: #5cdb95;
+    font-weight: bolder;
+}
+
+.card-text {
+    color: #c03c38;
+}
+
+/* Each of the blog article summary element is styled to look like a card. */
+.card {
+    width: 250px;
+    height: 300px;
+    box-shadow: 0px 0px 20px 0px #e08f8d;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 60px 2px #c03c38;
+}
+
+.card-link {    
+    display: inline-block;
+    border-radius: 15px;
+}
+
+/* Card link at the end of each card is styled to look like button. */
+.card-link:link, .card-link:visited {
+    background-color: #f44336;
+    color: #e08f8d;    
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;    
+}
+  
+.card-link:hover, .card-link:active {
+    background-color: #c03c38;
+    font-size: 1.4em;
+}
+
+/* Responsive media query for small screen devices. */
+@media screen and (max-width: 600px) {
+    .article-links {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4";
+        grid-gap: 30px;
+        justify-items: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .card-1 {
+        grid-area: c1;
+    }
+    
+    .card-2 {
+        grid-area: c2;
+    }
+    
+    .card-3 {
+        grid-area: c3;
+    }
+    
+    .card-4 {
+        grid-area: c4;
+    }
+}
+
+/* Media query for medium screen devices. */
+@media screen and (min-width: 601px) and (max-width: 920px) {
+    .article-links {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "c1 c2"
+        "c3 c4";
+        grid-gap: 30px;
+        justify-items: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .card-1 {
+        grid-area: c1;
+    }
+    
+    .card-2 {
+        grid-area: c2;
+    }
+    
+    .card-3 {
+        grid-area: c3;
+    }
+    
+    .card-4 {
+        grid-area: c4;
+    }
+}
+

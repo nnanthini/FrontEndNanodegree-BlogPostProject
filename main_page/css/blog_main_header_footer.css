@@ -1,0 +1,42 @@
+/* Stylesheet for the header and footer of blog_main.html.
+This stylesheet is imported into blog_main.css*/
+
+header, footer {
+    background-color: #5cdb95;
+    opacity: 0.8;
+    border: 2px solid #5cdb95;
+    color: #c03c38;
+    text-align: center;
+}
+
+h1 {
+    font-variant: small-caps;
+    text-shadow: 2px 2px #ca635f;
+}
+
+button {
+    color: #f4f4f4;
+    background-color: #c03c38;
+    opacity: 0.9;
+    padding: 5px 15px;
+    font-size: 1.5em;    
+    border-radius: 10%;
+}
+
+button:hover {
+    background-color: #c03c38;
+    opacity: 1.0;
+}
+
+/* Button will change text from "Like" to "Liked" when clicked. */
+#liked {
+    display: none;
+}
+
+button:active #like{
+    display: none;
+}
+
+button:active #liked{
+    display: inline;    
+}

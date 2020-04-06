@@ -1,0 +1,73 @@
+/* Stylesheet for the header and footer of blog_post.html.
+This stylesheet is imported into blog_post.css*/
+
+header, footer {
+    background-color: #136F63;
+    color: #FFA69E;
+    text-align: center;
+    opacity: 0.8;
+}
+
+/* Grid child elements for grid parent - body*/
+header {
+    grid-area: hd;    
+}
+
+footer {
+    grid-area: ft;
+}
+
+/*"Previous" button is disabled.
+"Next" button is styled such that on click, it expands its width. */
+.nav-buttons{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #7D4E57;
+    opacity: 0.8;
+    color: #F4F4F4;
+    font-size: 1.1em;
+    padding: 5px 15px;
+    border: 1px solid #FFA69E;
+}
+
+#prev {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#next:active {
+    transition: 3s;
+    padding: 5px 30px;
+}
+
+/* Responsive media query for small screen devices. */
+@media screen and (max-width: 600px) {
+    /* Grid child elements for grid parent - body*/
+    header {
+        grid-area: hd;    
+    }
+    
+    footer {
+        grid-area: ft;
+    }
+}
+
+/* Media query for medium screen devices. */
+@media screen and (min-width: 601px) and (max-width: 920px) {
+    /* Grid child elements for grid parent - body*/
+    header {
+        grid-area: hd;    
+    }
+    
+    footer {
+        grid-area: ft;
+    }
+}
+
